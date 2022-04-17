@@ -10,18 +10,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lato:wght@100&family=Poppins:wght@100;200;300;400;600;700&family=Rubik+Moonrocks&display=swap"
-            rel="stylesheet"  
+            rel="stylesheet"
         />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
         />
-        <script src="https://kit.fontawesome.com/9e541903f4.js" crossorigin="anonymous">
-            
-        </script>
+        <script
+            src="https://kit.fontawesome.com/9e541903f4.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
-        <section class="header">
+        <section class="sub-header">
             <nav>
                 <a href="home.html"
                     ><img src="images/bondi-logo.jpeg" alt=""
@@ -37,50 +38,43 @@
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
-            <div class="text-box">
-                <h1>Bondi Beach</h1>
-                <span class="short-text">
-                    <p>Discover Below</p>
-                </span>
-                <span class="long-text">
-                    <p>Click Menu For More</p>
-                </span>
-                <a href="about.html" class="home-button">Discover</a>
-            </div>
-                
-            </div>
+            <h1>About Bondi</h1>
         </section>
-        <section class="activities">
-            <h1>Choose Below</h1>
+
+        <!-- About Us -->
+        <section class="about-us">
             <div class="row">
-                <div class="menu">
-                    <img src="images/bondi-chill.jpeg" alt="" />
-                    <div class="menu-layer">
-                        <a href="about.html"><h3>About</h3></a>
-                    </div>
+                <div class="about-col">
+                    <h1>Australia's Most Famous Beach</h1>
+                    <p>
+                        Before heading to the beach this summer, check Beachsafe
+                        for the latest updates. The day begins early at Bondi
+                        Beach. As a glorious sunrise edges above the ocean
+                        horizon, surfers gracefully carve up waves, joggers
+                        limber up on the promenade and swimmers flip turn in
+                        Bondi Baths.
+                        <br />
+                        <br />
+                        The famous beach is buzzing from dawn to dusk and then
+                        Bondi’s night-time scene sparkles. The beautiful sandy
+                        beach is perfect for travel snaps or selfies at any time
+                        of the year.
+                        <br />
+                        <br />
+                        br Just 8km from the city centre, Bondi is easy to get
+                        to by public transport – the trip from Town Hall is 30
+                        minutes. Or you can take a scenic ferry ride from
+                        Circular Quay to Watsons Bay for a connecting bus to
+                        Bondi.
+                    </p>
+                    <br />
+                    <a href="gallery.html" class="home-button">EXPLORE NOW</a>
                 </div>
-                <div class="menu">
-                    <img src="images/bondi-best.jpeg" alt="" />
-                    <div class="menu-layer">
-                        <a href="gallery.html"><h3>Gallery</h3></a>
-                    </div>
-                </div>
-                <div class="menu">
-                    <img src="images/bondi-walk.jpeg" alt="" />
-                    <div class="menu-layer">
-                        <a href="contact.html"><h3>Contact Us</h3></a>
-                    </div>
+                <div class="about-col">
+                    <img src="images/bondi.webp" alt="" />
                 </div>
             </div>
         </section>
-        <!-- <section class="cta">
-            <h1>
-                Learn More About 
-                <br>
-                Australia's Most Famous Beach
-            </h1>
-            <a href="" class="home-button">About Bondi</a>
-        </section> -->
 
         <!-- Footer -->
 
@@ -101,13 +95,12 @@
             </div>
         </section>
 
-        <!-- JS for Toggle Menu -->
         <script>
             let navLinks = document.getElementById("navLinks");
-            function showMenu(){
+            function showMenu() {
                 navLinks.style.right = "0";
             }
-            function hideMenu(){
+            function hideMenu() {
                 navLinks.style.right = "-200px";
             }
         </script>

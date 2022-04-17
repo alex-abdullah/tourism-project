@@ -20,7 +20,8 @@
                 <a href="home.html"
                     ><img src="images/bondi-logo.jpeg" alt=""
                 /></a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="home.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
@@ -28,6 +29,7 @@
                         <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
             <h1>Contact Us</h1>
         </section>
@@ -99,6 +101,14 @@
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
-            
+                <script>
+                    let navLinks = document.getElementById("navLinks");
+                    function showMenu(){
+                        navLinks.style.right = "0";
+                    }
+                    function hideMenu(){
+                        navLinks.style.right = "-200px";
+                    }
+                </script>
     </body>
 </html>
