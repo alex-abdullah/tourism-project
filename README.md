@@ -22,8 +22,8 @@ I wanted to keep the page very simple across all of the pages. My central idea w
 
 -> I settled with 2 main display options for the website:
 
--   > 700px for desktop users
--   <700px for mobile device users
+-   more than 700px for desktop users
+-   less than 700px for mobile device users
 
 -> A big hurdle later on in development has been utilising modules, partials and mixins in my flow. There was a large deal of restructing required to integrate these into my CSS at first.
 Although, if I was to redo the website project from scratch, I would definitely have started with creating my variables, partials etc first BEFORE moving onto fully fleshing out the styling of the site.
@@ -34,5 +34,6 @@ Although, if I was to redo the website project from scratch, I would definitely 
 
 ### Additional development notes
 
--> social media icons were sourced from Font Awesome
+-> social media icons were sourced from Font Awesome;
+
 -> website font sourced from Google Fonts
