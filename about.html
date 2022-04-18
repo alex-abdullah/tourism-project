@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bondi Beach</title>
+        <link rel="stylesheet" href="tourism-project.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lato:wght@100&family=Poppins:wght@100;200;300;400;600;700&family=Rubik+Moonrocks&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/9e541903f4.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <section class="header-sub">
+            <nav>
+                <a href="home.html"
+                    ><img src="images/bondi-logo.jpeg" alt=""
+                /></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Bondi</h1>
+        </section>
+
+        <!-- About Us -->
+        <section class="about">
+            <div class="row">
+                <div class="about__col">
+                    <h1>Australia's Most Famous Beach</h1>
+                    <p>
+                        Before heading to the beach this summer, check Beachsafe
+                        for the latest updates. The day begins early at Bondi
+                        Beach. As a glorious sunrise edges above the ocean
+                        horizon, surfers gracefully carve up waves, joggers
+                        limber up on the promenade and swimmers flip turn in
+                        Bondi Baths.
+                        <br />
+                        <br />
+                        The famous beach is buzzing from dawn to dusk and then
+                        Bondi’s night-time scene sparkles. The beautiful sandy
+                        beach is perfect for travel snaps or selfies at any time
+                        of the year.
+                        <br />
+                        <br />
+                        Just 8km from the city centre, Bondi is easy to get to
+                        by public transport – the trip from Town Hall is 30
+                        minutes. Or you can take a scenic ferry ride from
+                        Circular Quay to Watsons Bay for a connecting bus to
+                        Bondi.
+                    </p>
+                    <br />
+                    <a href="gallery.html" class="button--sub">EXPLORE NOW</a>
+                </div>
+                <div class="about__col">
+                    <img src="images/bondi.webp" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                ab ipsa sed ipsum, ducimus aliquid suscipit totam, consequatur
+                <br />
+                quos repellendus molestias praesentium eos voluptatum doloribus!
+                Impedit exercitationem provident beatae saepe?
+            </p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </section>
+
+        <script>
+            let navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

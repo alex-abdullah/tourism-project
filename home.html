@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bondi Beach</title>
+        <link rel="stylesheet" href="tourism-project.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lato:wght@100&family=Poppins:wght@100;200;300;400;600;700&family=Rubik+Moonrocks&display=swap"
+            rel="stylesheet"  
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        />
+        <script src="https://kit.fontawesome.com/9e541903f4.js" crossorigin="anonymous">
+            
+        </script>
+    </head>
+    <body>
+        <section class="header__primary">
+            <nav>
+                <a href="home.html"
+                    ><img src="images/bondi-logo.jpeg" alt=""
+                /></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="header__text-box">
+                <h1>Bondi Beach</h1>
+                <span class="short-text">
+                    <p>Discover Below</p>
+                </span>
+                <span class="long-text">
+                    <p>Click Menu For More</p>
+                </span>
+                <a href="about.html" class="button--home">Discover</a>
+            </div>
+                
+            </div>
+        </section>
+        <section class="activities">
+            <h1>Choose Below</h1>
+            <div class="row">
+                <div class="menu">
+                    <img src="images/bondi-chill.jpeg" alt="" />
+                    <div class="menu__layer">
+                        <a href="about.html"><h3>About</h3></a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <img src="images/bondi-best.jpeg" alt="" />
+                    <div class="menu__layer">
+                        <a href="gallery.html"><h3>Gallery</h3></a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <img src="images/bondi-walk.jpeg" alt="" />
+                    <div class="menu__layer">
+                        <a href="contact.html"><h3>Contact Us</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                ab ipsa sed ipsum, ducimus aliquid suscipit totam, consequatur
+                <br />
+                quos repellendus molestias praesentium eos voluptatum doloribus!
+                Impedit exercitationem provident beatae saepe?
+            </p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </section>
+
+        <!-- JS for Toggle Menu -->
+        <script>
+            let navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
