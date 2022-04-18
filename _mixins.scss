@@ -1,0 +1,31 @@
+$color-accent: #555;
+$color-highlight: yellow;
+$color-text: #010122;
+
+@mixin heading($min-height) {
+    min-height: $min-height;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(images/bondi.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@mixin gallery-blocks {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+@mixin button($color) {
+    display: inline-block;
+    text-decoration: none;
+    color: $color;
+    border: 1px solid $color;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
