@@ -43,7 +43,7 @@ nav {
             width: 0;
             height: 2px;
             display: block;
-            background-color: yellow;
+            background-color: $color-highlight;
             margin: auto;
             transition: 0.5s;
         }
@@ -80,7 +80,7 @@ nav {
 
         &:hover {
             border: 1px solid black;
-            background: yellow;
+            background: $color-highlight;
             transition: 1s;
             color: black;
         }
@@ -324,6 +324,7 @@ nav .fa {
     flex-basis: 31%;
     width: auto;
     padding-top: 60px;
+    padding-bottom: 50px;
 
     &-one,
     &-two,
@@ -354,18 +355,10 @@ nav .fa {
 
 @media (max-width: 700px) {
     .gallery {
-        &-one {
-            display: flex;
-            flex-direction: column;
-        }
-
-        &-two {
-            display: flex;
-            flex-direction: column;
-        }
+        &-one,
+        &-two,
         &-three {
-            display: flex;
-            flex-direction: column;
+            @include gallery-mq;
         }
     }
 }

@@ -18,6 +18,11 @@ $color-text: #010122;
     width: auto;
 }
 
+@mixin gallery-mq {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin button($color) {
     display: inline-block;
     text-decoration: none;
